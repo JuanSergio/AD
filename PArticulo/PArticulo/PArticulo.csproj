@@ -75,13 +75,16 @@
     <Compile Include="MainWindow.cs" />
     <Compile Include="gtk-gui\MainWindow.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Articulo.cs" />
     <Compile Include="ArticuloView.cs" />
     <Compile Include="gtk-gui\PArticulo.ArticuloView.cs" />
     <Compile Include="Categoria.cs" />
     <Compile Include="ArticuloDao.cs" />
     <Compile Include="CategoriaDao.cs" />
+    <Compile Include="Properties\IEntityDao.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
 </Project>
