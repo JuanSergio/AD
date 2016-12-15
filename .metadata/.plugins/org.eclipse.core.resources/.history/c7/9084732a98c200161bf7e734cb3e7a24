@@ -1,0 +1,27 @@
+package org.institutoserpis.org;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class GArticulo {
+public static void main(String[] args) throws SQLException{
+		private Connection = new Connection connection;
+		Scanner tlc = new Scanner (System.in);
+		
+		System.out.println("========BASE DE DATOS=======");
+        System.out.println("0.Salir");
+        System.out.println("1.Nuevo");
+        System.out.println("2.Modificar");
+        System.out.println("3.Eliminar");
+        System.out.println("4.Consultar");
+        System.out.println("5.Listar");
+        
+        int opcion = tlc.nextInt();
+        switch (opcion) {
+        case1
+        }
+
+	}
+}

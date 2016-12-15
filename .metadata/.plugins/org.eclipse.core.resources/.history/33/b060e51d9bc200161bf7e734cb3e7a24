@@ -1,0 +1,56 @@
+package org.institutoserpis.org;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class GArticulo {
+	private static Connection connection;
+
+
+	public static void main(String[] args) throws SQLException{
+		Scanner tlc = new Scanner (System.in);
+		connection=DriverManager.getConnection(
+				"jdbc:mysql://localhost/dbprueba", 
+				"root", "sistemas");
+
+		int opcion = -1;
+		Datos.datos = new Datos();
+
+		do{
+			System.out.println("========BASE DE DATOS=======");     
+			System.out.println("1.Nuevo");
+			System.out.println("2.Modificar");
+			System.out.println("3.Eliminar");
+			System.out.println("4.Consultar");
+			System.out.println("5.Listar");
+			System.out.println("0.Salir");
+			System.out.println("Selecciona una opcion...");
+
+			opcion = tlc.nextInt();
+
+			switch (opcion) {
+			case1:
+				datos.nuevoCampo();
+			break;
+			case2:
+				datos.modificar();
+			break;
+			case3:
+				datos.eliminar();
+			break;
+			case4:
+				datos.consultar();
+			break;
+			case4:
+				datos.listar();
+			break;
+			case0:
+				System.out.println("Gracias por usar el servicio...");
+			}
+
+		}while (opcion!=0);
+
+	}
+}
